@@ -4,9 +4,9 @@ on:
   push:
     paths:
       - "info.yml"
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -47,10 +47,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
 
       - name: Push commit
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.REPO_TOKEN }}
-          branch: "master"
+          branch: "main"
           force: true
 
       - name: Install AWS CLI
