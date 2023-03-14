@@ -560,6 +560,194 @@ VegaNet:
       message: genesis for HAVAH VEGA
       nid: '0x101'
     IISS:
+DenebNet:
+  version: "v1.0.2"
+  only_goloop: false
+  info:
+    api_endpoint: "https://ctz.dev.havah.io"
+    p2p_endpoint: "seed.dev.havah.io:7100"
+    channel: "icon_dex"
+    tracker: "https://scan.dev.havah.io/"
+    docker_tag: "looploy/havah-node:v1.0.2"
+    goloop_version: "https://github.com/havah-project/goloop-havah/tree/v1.0.2"
+    #    transaction_fee: "on"
+    #    REVISION: "0xd"
+    SCORE_audit: "off"
+    UPDATE_DATE: "2023-03-14"
+    description: "-"
+  env:
+    CID: "0x630a4"
+    NID: "0x101"
+    ENDPOINT: "https://ctz.dev.havah.io"
+    LOGFILE: "/goloop/logs/goloop.log"
+    LOGROTATE_DATE: 14
+    LOG_OUTPUT_TYPE: "file"
+    SEEDS: "seed.dev.havah.io:7100"
+    GENESIS:
+      accounts:
+        - address: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+          balance: '0x3635c9adc5dea00000'
+        - address": cx0000000000000000000000000000000000000001
+          name: governance
+          score:
+            contentId: hash:{{hash:governance-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              name: Governance
+        - address: hx1000000000000000000000000000000000000000
+          balance: '0x0'
+          name: treasury
+        - address: cx4000000000000000000000000000000000000000
+          name: sustainable_fund
+          score:
+            contentId: hash:{{hash:sustainable-fund-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: SustainableFund
+        - address: hx6000000000000000000000000000000000000000
+          name: hoover_fund
+        - address: cx7000000000000000000000000000000000000000
+          balance: '0x4d8c524b9ef12957d600000'
+          name: ecosystem
+          score:
+            contentId: hash:{{hash:ecosystem-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: Eco System
+              _schedules:
+                - timestamp: '0x5eaa2d7392000'
+                  ratio: '13'
+                - timestamp: '0x5ed12744dc000'
+                  ratio: '16'
+                - timestamp: '0x5ef6df38b0000'
+                  ratio: '19'
+                - timestamp: '0x5f1dd909fa000'
+                  ratio: '22'
+                - timestamp: '0x5f44d2db44000'
+                  ratio: '25'
+                - timestamp: '0x5f6807142c000'
+                  ratio: '28'
+                - timestamp: '0x5f8f00e576000'
+                  ratio: '31'
+                - timestamp: '0x5fb4b8d94a000'
+                  ratio: '34'
+                - timestamp: '0x5fdbb2aa94000'
+                  ratio: '37'
+                - timestamp: '0x60016a9e68000'
+                  ratio: '40'
+                - timestamp: '0x6028646fb2000'
+                  ratio: '43'
+                - timestamp: '0x604f5e40fc000'
+                  ratio: '46'
+                - timestamp: '0x60751634d0000'
+                  ratio: '49'
+                - timestamp: '0x609c10061a000'
+                  ratio: '52'
+                - timestamp: '0x60c1c7f9ee000'
+                  ratio: '55'
+                - timestamp: '0x60e8c1cb38000'
+                  ratio: '58'
+                - timestamp: '0x610fbb9c82000'
+                  ratio: '61'
+                - timestamp: '0x613431b2e0000'
+                  ratio: '64'
+                - timestamp: '0x615b2b842a000'
+                  ratio: '67'
+                - timestamp: '0x6180e377fe000'
+                  ratio: '70'
+                - timestamp: '0x61a7dd4948000'
+                  ratio: '73'
+                - timestamp: '0x61cd953d1c000'
+                  ratio: '76'
+                - timestamp: '0x61f48f0e66000'
+                  ratio: '79'
+                - timestamp: '0x621b88dfb0000'
+                  ratio: '82'
+                - timestamp: '0x624140d384000'
+                  ratio: '85'
+                - timestamp: '0x62683aa4ce000'
+                  ratio: '88'
+                - timestamp: '0x628df298a2000'
+                  ratio: '91'
+                - timestamp: '0x62b4ec69ec000'
+                  ratio: '94'
+                - timestamp: '0x62dbe63b36000'
+                  ratio: '97'
+                - timestamp: '0x62ff1a741e000'
+                  ratio: '100'
+        - address: cx8000000000000000000000000000000000000000
+          name: planet_nft
+          score:
+            contentId: hash:{{hash:planet-nft-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: HAVAH Planet
+              _symbol: HAPL
+        - address: hx9000000000000000000000000000000000000000
+          name: Service Treasury
+        - address: cx1100000000000000000000000000000000000001
+          balance: '0x6765c793fa10079d0000000'
+          score:
+            contentId: hash:{{hash:vault-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: Vault(Project)
+        - address: cx1100000000000000000000000000000000000002
+          balance: '0x33b2e3c9fd0803ce8000000'
+          score:
+            contentId: hash:{{hash:vault-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: Vault(Partner)
+        - address: cx1100000000000000000000000000000000000003
+          balance: '0xddf5cb21233ad7df340000'
+          score:
+            contentId: hash:{{hash:vault-optimized.jar}}
+            contentType: application/java
+            owner: hx54f021fc4a755a2a2c9fdda47a16ce4cd3f3b43e
+            params:
+              _name: Vault(Reserved)
+      chain:
+        platform: havah
+        havah:
+          usdtPrice: '0x8ac7230489e80000'
+        fee:
+          stepPrice: '0x2e90edd00'
+          stepLimit:
+            invoke: '0x9502f900'
+            query: '0x2faf080'
+          stepCosts:
+            apiCall: '0x2710'
+            contractCall: '0x61a8'
+            contractCreate: '0x3b9aca00'
+            contractSet: '0x3a98'
+            contractUpdate: '0x3b9aca00'
+            default: '0x186a0'
+            delete: "-0xf0"
+            deleteBase: '0xc8'
+            get: '0x19'
+            getBase: '0xbb8'
+            input: '0xc8'
+            log: '0x64'
+            logBase: '0x1388'
+            schema: '0x1'
+            set: '0x140'
+            setBase: '0x2710'
+        timestampThreshold: '0x1388'
+        validatorList:
+          - hxb9fd60b86bb6ec89a0ced890bf9c3f74cdeab1fa
+          - hx9c2a3bcf394f040beebf562ca3d823129e8be25d
+          - hxe98936d9ccc79b612ed600ba9b37170397c9d766
+          - hx019b4c30b3dafd1775393cb649bcac77d1c026df
+      message: genesis for HAVAH VEGA
+      nid: '0x101'
+    IISS:
 WingNet:
   version: "v1.0.1"
   only_goloop: false
