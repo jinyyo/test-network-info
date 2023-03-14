@@ -577,7 +577,7 @@ DenebNet:
     description: "-"
   env:
     CID: "0x630a4"
-    NID: "0x101"
+    NID: "0x1011"
     ENDPOINT: "https://ctz.dev.havah.io"
     LOGFILE: "/goloop/logs/goloop.log"
     LOGROTATE_DATE: 14
@@ -746,7 +746,7 @@ DenebNet:
           - hxe98936d9ccc79b612ed600ba9b37170397c9d766
           - hx019b4c30b3dafd1775393cb649bcac77d1c026df
       message: genesis for HAVAH VEGA
-      nid: '0x101'
+      nid: '0x1011'
     IISS:
 WingNet:
   version: "v1.0.1"
