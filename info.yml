@@ -28,6 +28,8 @@ network_list:
   - "LisbonNet"
   - "BerlinNet"
   - "SejongNet"
+  - "VegaNet"
+  - "DenebNet"
 MainNet:
   version: "v1.0.3"
   only_goloop: false
